@@ -25,7 +25,7 @@ const Login = ({ setIsLogin,closeModal}) => {
 
         try {
 
-            const response = await api.post("/login", formData);
+            const response = await api.post("/api/auth/login", formData);
 
             localStorage.setItem("token", response.data.token);
 
