@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import Login from "./Login";
-import Signup from "./Signup";
+import SignUp from "./SignUp"
 import { FiX } from "react-icons/fi";
 
 const Authpage = ({closeModal}) => {
@@ -67,7 +67,7 @@ const Authpage = ({closeModal}) => {
                     setIsLogin={setIsLogin} 
                     closeModal={closeModal} />
                 ) : (
-                    <Signup setIsLogin={setIsLogin} />
+                    <SignUp setIsLogin={setIsLogin} />
                 )}
 
             </div>
