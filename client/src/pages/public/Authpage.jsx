@@ -13,9 +13,9 @@ const Authpage = ({closeModal}) => {
 
     return (
 
-        <div className='w-full min-h-screen flex items-start justify-center py-20'>
+        <div className='flex items-start justify-center py-20'>
 
-            <div className='relative w-full max-w-sm sm:max-w-md bg-blue-950 p-4 sm:p-5 rounded-2xl shadow-lg'>
+            <div className='relative w-[95%] sm:w-[85%] md:w-full max-w-sm sm:max-w-md bg-blue-950 p-4 sm:p-5 rounded-2xl shadow-lg'>
 
                 {/* Close Button */}
                 <button
