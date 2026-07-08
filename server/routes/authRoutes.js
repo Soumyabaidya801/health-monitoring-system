@@ -9,6 +9,6 @@ router.post('/register', registerUser);
 router.post('/login', loginUser);
 
 //Dashboard
-router.get('/dashboard',getUserDashboard);
+//router.post('/dashboard',getUserDashboard);
 
 module.exports = router;

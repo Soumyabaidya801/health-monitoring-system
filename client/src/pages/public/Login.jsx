@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import api from "../../api/axios";
 
@@ -28,10 +29,9 @@ const Login = ({ setIsLogin,closeModal}) => {
             const response = await api.post("/api/auth/login", formData);
 
             localStorage.setItem("token", response.data.token);
-
             alert(response.data.message);
             closeModal && closeModal();
-            navigate("/");
+            navigate("/dashboard");
 
         } catch (error) {
 
